@@ -21,10 +21,15 @@
 title: Victory Glass
 phone: 901-910-6956
 description: >- # this means to ignore newlines until "baseurl:"
-  Remote Auto Glass Repair. Veteran Owned & Servicing the Desoto county and Memphis areas.
+  Remote Auto Glass Repair. Veteran Owned & Servicing the Desoto County and Memphis areas.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_url: https://www.facebook.com/VictoryGlass0311/
+
+collections:
+  service:
+    output: true
+    permalink: /services/:path/
 
 # Build settings
 theme: minima

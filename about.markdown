@@ -1,19 +1,17 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about/
-exclude: true 
+subtitle: Veteran Owned
+permalink: /about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+<div class="container thiner">
+	<img style="max-width: 100px" src="../assets/glover-couple.jpg" />
+	<p>
+		Family owned business - locally owned and operated.
+		We treat every customer like family.
+		We offer a lifetime warranty against leaks and wind noise.
+		We offer special pricing for veteran & first responders.<br/>
+		~ Ben & Jessica Glover
+	</p>
+</div>

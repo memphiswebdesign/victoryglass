@@ -1,52 +1,37 @@
 ---
 layout: default
 title: Victory Auto Glass
+permalink: /
 ---
 
-<section id="hero-landing">
-	<div class="container">
-		<div id="logo">{% include_relative assets/victory-glass-white-text-logo.html %}</div>
-		<h1>🇺🇸&nbsp; Veteran Owned &amp; Operated &nbsp;🇺🇸</h1>
-		<div class="stars">{% include_relative assets/5stars.html %}</div>
-		<h2>Veteran Owned  & Servicing the Desoto county and Memphis areas! 
-		<br>Give us a call for a free quote today!</h2>
-		<div id="cta">
-			<a class="btn ghost white" href="tel:9019106956">Call: 901-910-6956</a>
-		</div>
-		<div class="props">
-			<span>
-				<img src="../assets/icon-check-shield.svg" />
-				<p>lifetime warranty</p>
-			</span>
-			<span>
-				<img src="../assets/icon-checkered-flag.svg" />
-				<p>fast repairs</p>
-			</span>
-			<span>
-				<img src="../assets/icon-quick-van.svg" />
-				<p>fully remote service</p>
-			</span>
-		</div>
-		<div class="hero-poster">
-			<img src="../assets/poster-sharp.png" />
-		</div>
-	</div>
-</section>
-<section id="hero-footer">
-	<div class="container">
-		<div id="cta">
-			<a class="btn ghost" href="https://www.facebook.com/VictoryGlass0311/" target="_blank">Like us on Facebook</a>
-		</div>
-		<div class="about">
-			<img style="max-width: 100px" src="../assets/glover-couple.jpg" />
-			<p>
-				Family owned business - locally owned and operated.<br>
-				We treat every customer like family.<br>
-				We offer a lifetime warranty against leaks and wind noise.<br>
-				<strong>Veteran owned</strong><br>
-				We offer special pricing for veteran & first responders.<br>
-				~ Ben & Jessica Glover
-			</p>
+<div class="home-intro plus-tile-tx">
+	<div class="container thin"> 
+		<div class="flex fx-apart fx-wrap">
+			<div class="intro">
+				<pre>Trusted & Dependent</pre>
+				<h1>Headline here about the business, mission, service that it provides to the community.</h1>
+				<p>Lorem Ipsum is simply dummy text of the print and web industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+			<!-- Services Grid -->
+			<div class="services-grid">
+				<div class="flex fx-apart fx-wrap cards center">
+					{% for service in site.service %}
+					<div class="fx-item-2">
+						<div class="card-item sm">
+							<a class="card-link" href="{{ service.url }}" title="service name"></a>
+							<div class="card-image">
+								<img src="{{ service.img }}" alt="{{ service.title }}" />
+							</div>
+							<div class="card-meta">
+								<h5>{{ service.title }}</h5>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
 		</div>
 	</div>
-</section>
+</div>
+
+{% include latest-news-widget.html %}

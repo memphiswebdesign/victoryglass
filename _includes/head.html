@@ -1,15 +1,59 @@
 <!-- head.html -->
 <meta charset="UTF-8" />
 <title>{{ site.title }} - {{ page.title }}</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Meta Data -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index,follow"/>
+<meta name="description" content="{{ site.description }}"/>
+<meta property="og:title" content="{{ site.title }}"/>
+<meta property="og:description" content="{{ site.description }}"/>
+<meta property="og:url" content="https://www.victoryglass.us/">
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="{{ site.url }}/assets/banner.png"/>
+<meta property="og:image:alt" content="{{ site.description }}"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<link rel="canonical" href="/"/>
+<!-- Styles -->
 <link rel="stylesheet" href="/css/style.css" />
+<!-- Icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png" />
 <link rel="icon" type="image/png" href="/assets/favicon-32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="/assets/favicon-16.png" sizes="16x16" />
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap" rel="stylesheet">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "WebSite",
+  "name" : "Victory Glass",
+  "alternateName" : "Victory Auto Glass Mid South",
+  "url" : "https://www.victoryglass.us/"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "https://www.victoryglass.us/",
+    "logo": "{{ site.url }}/assets/banner.png",
+    "contactPoint" : [
+    {   "@type" : "ContactPoint",
+        "telephone" : "901-910-6956",
+        "contactType" : "Sales",
+        "contactOption" : "TollFree",
+        "areaServed" : "US",
+        "availableLanguage" : "English"
+} ],
+    "sameAs" : [
+        "https://www.facebook.com/VictoryGlass0311/"
+    ]
+}
+</script>

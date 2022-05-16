@@ -1,1 +1,26 @@
-<header>Header coming soon</header>
+<header>
+	<div class="container center white">
+		<div class="flex fx-apart fx-align-center">
+			<div id="logo">
+				<a href="/">
+					{% include victory-glass-white-text-logo.html %}
+				</a>
+			</div>
+			<nav class="mobile-hide">
+				<ul>
+					{% for item in site.data.menu %} 
+					<li {% if item.link == page.url %} class="active"{% endif %}
+					><a href="{{item.link}}">{{item.title}}</a></li>
+					{% endfor %}
+				</ul>
+			</nav>
+			<div class="cta mobile-hide">
+				<a class="btn ghost" href="tel:9019106956">Call Now</a>
+				<a class="btn" href="/contact" >Request Job</a>
+			</div>
+			<button class="hamburger mobile-show">
+				<span></span>
+			</button>
+		</div>
+	</div>
+</header> 

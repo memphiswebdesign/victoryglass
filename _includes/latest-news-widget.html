@@ -1,0 +1,24 @@
+<section id="featured-news">
+	<div class="container thin center">
+		<pre>Tips &amp; Tricks</pre>
+		<h2>Latest Victory Glass News</h2>
+		<a href="/news" class="text-link">View All News</a>
+	</div>
+	<div class="container">
+		<div class="flex fx-apart fx-wrap cards center">
+			{% for post in site.posts limit:3 %}
+			<div class="fx-item-3 fx-item-sm-2 fx-item-xs-1">
+				<div class="card-item">
+					<a class="card-link" href="{{ post.url }}" alt="hotel-name"></a>
+					<div class="card-image">
+						<img src="{{ post.img }}" />
+					</div>
+					<div class="card-meta">
+						<h6>{{ post.title }}</h6>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
