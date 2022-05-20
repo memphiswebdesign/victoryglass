@@ -870,10 +870,22 @@ footer p {
 	.service-info {padding: 0 8%;}
 }
 
+svg#veteran-badge #star {
+	animation: star 5s linear forwards infinite;
+	transform-origin: center;
+	-webkit-transform-origin: center;
+	transform-box: fill-box;
+}
+
 /*CSS Animation Keyframes*/
 @keyframes nav-marker {
 	100% {width: 45%;}
-} 
+}
+@keyframes star {
+	0%, 40%, 60%, 100% {transform: none;}
+	50% {transform: rotateY(180deg);
+}
+
 /*LazyLoad Blur Loader*/
 .blur {
 	width: 100%;
